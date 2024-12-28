@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Latar Belakang Judul -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FF5656" />
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Penjualan Barang WDZ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:fontFamily="@font/kreon_bold"
+            android:gravity="center"
+            android:layout_marginTop="-56dp"
+            android:padding="16dp" />
+
+        <!-- Button Input Data Barang -->
+        <Button
+            android:id="@+id/btnInputDataBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input Data Barang"
+            android:backgroundTint="#FFA7A7"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/kreon_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" />
+
+        <!-- Konten Kode dan Tombol Scan Barcode -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_vertical">
+
+            <!-- Label Kode -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Kode :"
+                android:textColor="#000000"
+                android:fontFamily="@font/kreon_regular"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+            <!-- TextView untuk menampilkan hasil scan -->
+            <TextView
+                android:id="@+id/tvKode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:hint="Hasil Scan Barcode"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:background="#E0E0E0"
+                android:layout_marginStart="8dp" />
+
+            <!-- Tombol Scan Barcode -->
+            <Button
+                android:id="@+id/btnScanBarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan Barcode"
+                android:backgroundTint="#FFA7A7"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/kreon_regular"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp" />
+        </LinearLayout>
+
+        <!-- Label dan Input Nama Barang -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Barang:"
+            android:textColor="#000000"
+            android:fontFamily="@font/kreon_regular"
+            android:textSize="16sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" />
+
+        <EditText
+            android:id="@+id/etNamaBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Nama Barang"
+            android:background="#FFA7A7"
+            android:padding="4dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" />
+
+        <!-- Label dan Input Harga -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga :"
+            android:textColor="#000000"
+            android:fontFamily="@font/kreon_regular"
+            android:textSize="16sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" />
+
+        <EditText
+            android:id="@+id/etHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan harga Barang"
+            android:background="#FFA7A7"
+            android:padding="4dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" />
+
+        <!-- Tombol Aksi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:backgroundTint="#FFA7A7"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/kreon_regular"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:backgroundTint="#FFA7A7"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/kreon_regular"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnHapus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hapus"
+                android:backgroundTint="#FFA7A7"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/kreon_regular"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnBatal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:backgroundTint="#FFA7A7"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/kreon_regular" />
+        </LinearLayout>
+
+        <!-- Informasi Detail -->
+        <TextView
+            android:id="@+id/tvInformasiDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informasi Detail :\nKode:\nNama Barang:\nHarga Barang:"
+            android:textColor="#000000"
+            android:fontFamily="@font/kreon_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+

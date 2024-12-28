@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Latar Belakang Judul -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FF5656" />
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Penjualan Barang WDZ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:fontFamily="@font/kreon_bold"
+        android:gravity="center"
+        android:layout_marginTop="-56dp"
+        android:paddingVertical="16dp" />
+
+    <!-- Spacer untuk memberikan jarak -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Tombol Input Barang -->
+    <Button
+        android:id="@+id/btnInputBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Input Barang"
+        android:backgroundTint="#FFA7A7"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/kreon_regular"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Tombol Lihat Data Barang -->
+    <Button
+        android:id="@+id/btnLihatDataBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Lihat Data Barang"
+        android:backgroundTint="#FFA7A7"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/kreon_regular"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Tombol Keluar -->
+    <Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Keluar"
+        android:backgroundTint="#FFA7A7"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/kreon_regular"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">ep-shrill-cloud-a5yxdfli.us-east-2.aws.neon.tech</domain>
+    </domain-config>
+</network-security-config>
